@@ -1,0 +1,237 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    height: 95vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_div {
+    width: 325px;
+    height: 450px;
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 20px;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#circle_result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    z-index: 8;
+}
+
+#h1_tittle {
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+}
+
+#p_result {
+    font-weight: 800;
+    color: white;
+    font-size: 60px;
+    margin-bottom: -5px;
+}
+
+#p_total {
+    color: hsla(241, 100%, 89%, 45%);
+    font-size: 18px;
+}
+
+#p_result_text {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+#p_result_justfy {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsla(0, 0%, 100%, 50%);
+    font-weight: 500;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.right_div {
+    width: 305px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    box-shadow: 0.5em 1em 3em hsl(221, 100%, 95%);
+    border-radius: 20px;
+    margin-left: -30px;
+    padding-left: 30px;
+}
+
+#sumary {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.head_sumary {
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.box_estatisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.estatisticas {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    font-weight: 500;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+}
+
+.span_name {
+    display: flex;
+    justify-items: left;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.name {
+    padding-left: 10px;
+}
+
+.result_number {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.number{
+    color: hsl(224, 30%, 27%);
+}
+
+.p100 {
+    color: hsla(224, 30%, 27%, 45%);
+}
+
+#reaction{
+    background-color: hsla(0, 100%, 67%, 10%);
+    height: 45px;
+    width: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#red_reaction {
+    color: hsl(0, 100%, 67%);;
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 10%);
+    height: 45px;
+    width: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#yelllow_memory {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 10%);
+    height: 45px;
+    width: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#green_verbal {
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 10%);
+    height: 45px;
+    width: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#blue_visual {
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    width: 260px;
+    border-radius: 30px;
+    border: 0px solid;
+    cursor: pointer;
+    font-size: 18px;
+}
+.button {
+    padding-top: 20px;
+}
+
+footer {
+    margin: 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .right_div {
+        margin: 0px;
+        margin-top: -30px;
+        box-shadow: 0.1em 0.5em 3em hsl(221, 100%, 90%);
+        padding-left: 0px;
+        padding-top: 20px;
+        width: 325px;
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+}
